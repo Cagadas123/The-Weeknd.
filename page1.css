@@ -1,4 +1,5 @@
-body {
+/*universal*/
+* {
     background-color: #121212;
     color: #ffffff;
     font-family: Arial, sans-serif;
@@ -63,7 +64,7 @@ header h1 {
     line-height: 1.7;
     font-size: 1rem;
 }
-
+/*update/adding link later on*/
 .links a {
     margin-top: 15px;
     display: flex;
@@ -80,7 +81,7 @@ footer {
     color: #000000;
     margin-top: 20px;
 }
-
+/*responsivenss*/
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.6rem;
