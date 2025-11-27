@@ -100,6 +100,14 @@ footer {
     .img1, video {
         max-width: 100%;
     }
+
+     .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 }
 
 @media (max-width: 480px) {
@@ -126,6 +134,14 @@ footer {
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
+}
+
+     .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 }
