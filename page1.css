@@ -33,6 +33,7 @@ header h1 {
 .nav {
     display: flex;
     justify-content: center;
+    gap: 250px;
     padding: 12px;
     background: #111;
 }
