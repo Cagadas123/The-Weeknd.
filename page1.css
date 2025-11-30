@@ -95,6 +95,14 @@ footer {
         font-size: 1.6rem;
     }
 
+    nav {
+     display: flex;
+     justify-content: center;
+     gap: 100px;
+     padding: 8px;
+     background: #000000;
+    }
+
     .nav a {
         font-size: 1rem;
     }
@@ -124,6 +132,14 @@ footer {
 
     header h1 {
         font-size: 1.4rem;
+    }
+
+    nav {
+     display: flex;
+     justify-content: center;
+     gap: 90px;
+     padding: 5px;
+     background: #000000;
     }
 
     .nav a {
