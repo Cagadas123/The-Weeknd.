@@ -98,7 +98,7 @@ footer {
     nav {
      display: flex;
      justify-content: center;
-     gap: 100px;
+     gap: 90px;
      padding: 8px;
      background: #000000;
     }
@@ -137,7 +137,7 @@ footer {
     nav {
      display: flex;
      justify-content: center;
-     gap: 90px;
+     gap: 80px;
      padding: 5px;
      background: #000000;
     }
