@@ -9,8 +9,8 @@ header {
     background-position: center;
     height: 250px;
     display: flex;
-    flex-direction: column;     /* Arrange items top → bottom */
-    justify-content: space-between; /* Push title to top, nav to bottom */
+    flex-direction: column; 
+    justify-content: space-between; 
     padding: 5px;
 }
 
@@ -83,7 +83,12 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 10px;
-   
+}
+
+.album-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .album-2 {
@@ -306,7 +311,7 @@ footer {
     border-radius: 10px;
 }
 
-/* Laptop (min-width: 1025px) */
+/* Laptop */
 @media (min-width: 1025px) and (max-width: 1440px) {
     .album-container {
         grid-template-columns: repeat(3, 1fr);
@@ -316,7 +321,7 @@ footer {
 }
 
 
-/* Tablets (max-width: 1024px) */
+/* Tablets */
 @media (max-width: 1024px) {
     nav {
         gap: 90px;
@@ -333,7 +338,7 @@ footer {
     }
 }
 
-/* Large phones & small tablets (max-width: 768px) */
+/* Large phones */
 @media (max-width: 768px) {
 
     header {
@@ -360,7 +365,7 @@ footer {
     }
 }
 
-/* Mobile Phones (max-width: 480px) */
+/* Mobile Phones */
 @media (max-width: 480px) {
 
     header {
