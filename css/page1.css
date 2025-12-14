@@ -1,0 +1,167 @@
+
+/*universal*/
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav {
+     display: flex;
+     justify-content: center;
+     gap: 300px;
+     padding: 10px;
+     background: #000000;
+}
+
+nav a {
+     color: white; 
+     text-decoration: none;
+     font-size: 1.2rem;
+}
+
+hr {
+     border: 0;
+     height: 3px;
+     background: #ffffff;
+     margin: 20px 0;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.img1, video {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.text {
+    margin-top: 20px;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+/*update/adding link later on*/
+.links a {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-top: 20px;
+}
+/*responsivenss*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+     display: flex;
+     justify-content: center;
+     gap: 90px;
+     padding: 8px;
+     background: #000000;
+    }
+
+    .nav a {
+        font-size: 1rem;
+    }
+
+    .img1, video {
+        max-width: 100%;
+    }
+
+     .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    header img {
+        max-width: 180px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+     display: flex;
+     justify-content: center;
+     gap: 80px;
+     padding: 5px;
+     background: #000000;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+    }
+
+    video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+     .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+}
+
