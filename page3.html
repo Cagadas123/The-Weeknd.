@@ -43,20 +43,26 @@
     <main>
         <div class="songs-container">
         <div class="first-album">
-            <div class="song-row">
-                <div class="song-number">1</div>
-                <div class="song-thumb">
-                    <img src="https://singersroom.com/wp-content/uploads/2023/02/The-Weeknd.jpg" alt="Album art">
-                    <span src="songs/The Weeknd, Justice - Wake Me Up (Audio).mp3" class="play-btn">▶</span>
-                </div>
-                <div class="song-info">
-                    <div class="song-title">Wake Me Up</div>
-                    <div class="song-artist">The Weeknd, Justice</div>
-                </div>
-                <!-- audio element for track 1 -->
-                <div class="song-played"></div>
-                <div class="song-duration">5:08</div>
-            </div>
+           <div class="song-row">
+    <div class="song-number">1</div>
+
+    <div class="song-thumb" onclick="playSong('audio-1')">
+        <img src="https://singersroom.com/wp-content/uploads/2023/02/The-Weeknd.jpg" alt="Album art">
+        <span class="play-btn">▶</span>
+    </div>
+
+    <div class="song-info">
+        <div class="song-title">Wake Me Up</div>
+        <div class="song-artist">The Weeknd, Justice</div>
+    </div>
+
+    <!-- IMPORTANT: Use a REAL mp3 link here -->
+    <audio id="audio-1" preload="metadata">
+        <source src="songs/The Weeknd, Justice - Wake Me Up (Audio).mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="song-duration">5:08</div>
+</div>
             
             <div class="song-row">
                 <div class="song-number">2</div>
@@ -1479,6 +1485,27 @@
         </div>
     </main>
 
+    <script>
+function playSong(id) {
+    const audio = document.getElementById(id);
+
+    // Pause all other audio first
+    document.querySelectorAll("audio").forEach(song => {
+        if (song.id !== id) {
+            song.pause();
+            song.currentTime = 0;
+        }
+    });
+
+    // Play or Pause clicked audio
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+</script>
+    
 </body>
 
 </html>
