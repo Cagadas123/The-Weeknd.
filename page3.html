@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album Songs</title>
-    <link rel="stylesheet" href="css/page3.css">
+    <link rel="stylesheet" href="page33.css">
 
 </head>
 
@@ -21,9 +21,9 @@
         </div>
         <nav>
             <!-- Link to home page -->
-            <a href="index.html">HOME</a>
+            <a href="final-project.html">HOME</a>
             <!-- Link to albums page -->
-            <a href="Album.html">ALBUMS</a>
+            <a href="albums.html">ALBUMS</a>
             <!-- Link to songs section -->
             <a href="#">SONGS</a>
         </nav>
@@ -46,15 +46,16 @@
             <div class="song-row">
                 <div class="song-number">1</div>
                 <div class="song-thumb">
-                    <img src="https://singersroom.com/wp-content/uploads/2023/02/The-Weeknd.jpg" alt="Album art">
+                    <img src="https://singersroom.com/wp-content/uploads/2023/02/The-Weeknd.jpg" alt="Album art" onclick="document.getElementById('audio-1').play()">
                     <span class="play-btn">▶</span>
                 </div>
                 <div class="song-info">
                     <div class="song-title">Wake Me Up</div>
                     <div class="song-artist">The Weeknd, Justice</div>
                 </div>
+                <!-- audio player for first song; replace the src value with your song link -->
                 <div class="song-audio">
-                    <audio controls src="songs/The Weeknd, Justice - Wake Me Up (Audio).mp3
+                    <audio controls src="css/The Weeknd, Justice - Wake Me Up (Audio).mp3
 " id="audio-1"></audio>
                 </div>
                 <div class="song-played"></div>
