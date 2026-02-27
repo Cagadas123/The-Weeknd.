@@ -43,7 +43,7 @@
     <main>
         <div class="songs-container">
         <div class="first-album">
-           <div class="song-row">
+            <div class="song-row">
     <div class="song-number">1</div>
 
     <div class="song-thumb" onclick="playSong('audio-1')">
@@ -1485,7 +1485,7 @@
         </div>
     </main>
 
- <!--  <script>
+ <script>
 function playSong(id) {
     const audio = document.getElementById(id);
 
@@ -1504,25 +1504,8 @@ function playSong(id) {
         audio.pause();
     }
 }
-</script> -->
+</script>
 
-  <script>  const audio = document.getElementById("audio");
-const progress = document.getElementById("progress");
-
-// Update progress while playing
-audio.ontimeupdate = function(){
-    const percent = (audio.currentTime / audio.duration) * 100;
-    progress.style.width = percent + "%";
-};
-
-// Click to seek
-function seek(event){
-    const rect = event.currentTarget.getBoundingClientRect();
-    const clickX = event.clientX - rect.left;
-    const width = rect.width;
-    audio.currentTime = (clickX / width) * audio.duration;
-}
-    </script>
 </body>
 
 </html>
