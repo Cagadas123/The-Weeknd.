@@ -1485,27 +1485,6 @@
         </div>
     </main>
 
- <script>
-function playSong(id) {
-    const audio = document.getElementById(id);
-
-    // Pause all other audio first
-    document.querySelectorAll("audio").forEach(song => {
-        if (song.id !== id) {
-            song.pause();
-            song.currentTime = 0;
-        }
-    });
-
-    // Play or Pause clicked audio
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-}
-</script>
-
 </body>
 
 </html>
