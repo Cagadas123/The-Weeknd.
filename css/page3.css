@@ -121,9 +121,9 @@ main {
 
 audio{
 
-width:300px;
+width:250px;
 
-height:80px;
+height:100px;
 
 filter:invert(1) brightness(0.8);
 
